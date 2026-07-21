@@ -1,0 +1,47 @@
+project:
+  name: pi-gnn-glof
+  seed: 42
+  device: auto
+
+data:
+  manifest: data/processed/manifest.jsonl
+  split:
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+  optical_channels: 6
+  velocity_features: 3
+  thermal_features: 1
+  forecast_horizon: 6
+  graph:
+    top_k: 6
+    distance_scale: 1000.0
+    slope_scale: 0.10
+    flow_power: 2.0
+    cross_flow_floor: 0.05
+
+model:
+  modality_embedding: 64
+  hidden_dim: 128
+  graph_layers: 3
+  edge_features: 4
+  dropout: 0.30
+
+physics:
+  continuity_weight: 0.50
+  temperature_elevation_weight: 0.30
+  flow_weight: 0.20
+  total_weight: 0.40
+  downstream_margin: 0.02
+
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 200
+  patience: 20
+  batch_size: 1
+  gradient_clip_norm: 1.0
+  trajectory_weight: 1.0
+  num_workers: 0
+  decision_threshold: 0.50

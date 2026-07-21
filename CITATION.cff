@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying manuscript and archived release."
+title: "PI-GNN for Shisper Glacier GLOF hazard forecasting"
+type: software
+version: 0.1.0
+date-released: 2026-07-21
+authors:
+  - family-names: Kaushik
+    given-names: Pratham
+  - family-names: Kukreja
+    given-names: Vinay
+  - family-names: Jain
+    given-names: Eshika
+license: BSD-3-Clause
+repository-code: "https://github.com/Eshikajain0150/pi-gnn-glof"
+abstract: >-
+  Reference implementation of a physics-informed multimodal graph neural network
+  for spatio-temporal glacier-lake instability and GLOF hazard forecasting.

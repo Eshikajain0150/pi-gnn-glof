@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+data/raw/
+data/standardized/
+data/processed/
+data/synthetic/
+outputs/
+*.pt
+*.pth
+*.npz
+!tests/fixtures/*.npz
