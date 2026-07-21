@@ -87,7 +87,7 @@ python scripts/run_experiments.py \
 python scripts/summarize_runs.py --input outputs/comparison
 ```
 
-Run the full, single-term, and no-physics ablations used for the Table 4
+Run the full, single-term, and no-physics ablations used for the Table 5
 workflow:
 
 ```bash
