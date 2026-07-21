@@ -61,7 +61,7 @@ pytest -q
 ## Data and full experiment
 
 The multimodal source data described by GLOFNet are publicly linked from the
-[GLOFNet preprint](https://arxiv.org/abs/2510.10546). Download access and the
+[GLOFNet publication](https://doi.org/10.1109/ICoDT269104.2025.11360730). Download access and the
 source-specific preparation notes are in [docs/data.md](docs/data.md). The raw
 imagery is not duplicated in this repository because of its size and upstream
 licensing.
