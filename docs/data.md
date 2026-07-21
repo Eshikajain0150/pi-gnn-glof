@@ -10,8 +10,8 @@ Glacier in GLOFNet:
 3. MODIS thermal observations, represented as a temporal temperature sequence.
 
 The GLOFNet authors provide a public-data link in their
-[preprint](https://arxiv.org/abs/2510.10546). At the time this repository was
-prepared, that link resolved to:
+[published dataset paper](https://doi.org/10.1109/ICoDT269104.2025.11360730).
+At the time this repository was prepared, that link resolved to:
 
 <https://drive.google.com/drive/folders/191x2uwFRzgd2CMfqpqdVw0UrT5YZYjHN>
 
