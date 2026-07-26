@@ -3,7 +3,7 @@ message: "If you use this software, please cite the accompanying manuscript and 
 title: "PI-GNN for Shisper Glacier GLOF hazard forecasting"
 type: software
 version: 0.1.0
-date-released: 2026-07-21
+date-released: 2026-07-26
 authors:
   - family-names: Kaushik
     given-names: Pratham
