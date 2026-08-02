@@ -10,4 +10,4 @@ Verified SHA-256:
 
 GitHub Actions independently verified the archive and all internal checksums, reproduced the principal tables and figures, and passed the release-specific test. The repository-wide test suite and CPU quick test also passed.
 
-The pull request may now proceed to review and merge. Create the immutable release tag and archival DOI only after merge.
+The pull request is ready for review and merge. Create the immutable release tag and archival DOI only after merge.
