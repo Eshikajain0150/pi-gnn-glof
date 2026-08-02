@@ -1,0 +1,68 @@
+protocol:
+  id: CAUSAL_30DAY_GLOF_FORECAST_V1_1
+  evidence_version: causal30_v1
+  forecast_horizon_days: 30
+  anchor_cadence_days: 8
+  interval_censoring: full_event_interval_containment
+
+data:
+  manifest: evidence/causal30_v1/anchor_manifest.jsonl
+  event_node_index: 62
+  num_nodes: 84
+  optical_channels: 6
+  optical_lookback_days: 48
+  velocity_sequence_length: 4
+  thermal_sequence_length: 4
+  forecast_steps: 6
+  split:
+    train_years: [2019, 2020]
+    validation_years: [2021]
+    test_years: [2022]
+  expected_counts:
+    train: {records: 27, positive: 8, negative: 19}
+    validation: {records: 7, positive: 2, negative: 5}
+    test: {records: 9, positive: 4, negative: 5}
+    total: {records: 43, positive: 14, negative: 29}
+
+experiment:
+  seeds: [7, 21, 42, 84, 123]
+  variants: [cnn, temporal_gru, plain_gnn, pi_gnn]
+  threshold_selection: validation_only
+  dispersion: sample_standard_deviation_across_seeds
+
+graph:
+  top_k: 6
+  distance_scale_m: 1000.0
+  slope_scale: 0.10
+  flow_power: 2.0
+  cross_flow_floor: 0.05
+
+model:
+  modality_embedding: 64
+  hidden_dim: 128
+  graph_layers: 3
+  edge_features: 4
+  dropout: 0.30
+
+physics:
+  total_weight: 0.40
+  continuity_share: 0.50
+  temperature_elevation_share: 0.30
+  downstream_flow_share: 0.20
+  downstream_margin: 0.02
+
+training:
+  optimizer: AdamW
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  epochs: 200
+  patience: 20
+  batch_size: 1
+  gradient_clip_norm: 1.0
+
+claim_boundaries:
+  test_unit: one_correlated_2022_event_sequence
+  seed_interpretation: optimization_variability
+  operational_claims: prohibited
+  cross_glacier_generalization: not_established
+  separate_125_scene_rerun: excluded
