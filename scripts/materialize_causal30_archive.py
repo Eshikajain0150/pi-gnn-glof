@@ -2,7 +2,7 @@
 from __future__ import annotations
 import argparse, base64, hashlib
 from pathlib import Path
-EXPECTED_SHA256 = "0219aee38bad52917ef534818c96a5a0121f1aa1f3541579e87771c7f268bcfc"
+EXPECTED_SHA256 = "0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa"
 
 def materialize(parts_dir: Path, output: Path) -> Path:
     parts=sorted(parts_dir.glob("causal30_v1_release.zip.b64.part*"))
