@@ -1,0 +1,28 @@
+{
+  "release_candidate": "causal30_v1",
+  "protocol_id": "CAUSAL_30DAY_GLOF_FORECAST_V1_1",
+  "branch": "release/causal30_v1",
+  "base_commit": "4434e8a17aa265aa64a15d84e6d32052901219d7",
+  "compact_archive_filename": "causal30_v1_release.zip",
+  "compact_archive_sha256": "0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa",
+  "local_verification": {
+    "status": "PASS",
+    "anchors": 43,
+    "splits": {"train": 27, "validation": 7, "test": 9},
+    "labels": {"negative": 29, "positive": 14},
+    "seeds": [7, 21, 42, 84, 123],
+    "primary_seed_model_rows": 20,
+    "ablation_seed_configuration_rows": 35,
+    "event_node_predictions": 180,
+    "pytest": "1 passed"
+  },
+  "scientific_boundaries": {
+    "test_interpretation": "one correlated 2022 drainage sequence",
+    "seed_interpretation": "optimization variability",
+    "physics_ablations": "exploratory",
+    "separate_125_scene_rerun": "excluded",
+    "operational_claims": false,
+    "cross_glacier_generalization": false
+  },
+  "release_gate": "Do not create the immutable tag or archival DOI until the evidence archive is committed, CI passes, and fresh-environment verification succeeds."
+}
