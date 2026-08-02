@@ -1,9 +1,10 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the accompanying manuscript and archived release."
+message: "If you use this software, please cite the archived v1.0.0-causal30 release and the accompanying manuscript."
 title: "PI-GNN for Shisper Glacier GLOF hazard forecasting"
 type: software
-version: 0.1.0
-date-released: 2026-07-26
+version: "v1.0.0-causal30"
+date-released: 2026-08-02
+doi: "10.5281/zenodo.21761944"
 authors:
   - family-names: Kaushik
     given-names: Pratham
@@ -13,6 +14,12 @@ authors:
     given-names: Eshika
 license: BSD-3-Clause
 repository-code: "https://github.com/Eshikajain0150/pi-gnn-glof"
+repository-artifact: "https://github.com/Eshikajain0150/pi-gnn-glof/releases/tag/v1.0.0-causal30"
+url: "https://doi.org/10.5281/zenodo.21761944"
 abstract: >-
-  Reference implementation of a physics-informed multimodal graph neural network
-  for spatio-temporal glacier-lake instability and GLOF hazard forecasting.
+  Reference implementation and frozen causal30_v1 reproducibility package for a
+  physics-informed multimodal graph neural network for spatio-temporal
+  glacier-lake instability and GLOF hazard forecasting at Shisper Glacier.
+  The archived version contains the chronological protocol, compact evidence,
+  verification scripts, reproduced tables and figures, and explicit scientific
+  interpretation boundaries.
