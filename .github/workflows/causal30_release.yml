@@ -6,6 +6,7 @@ on:
   pull_request:
     paths:
       - "configs/causal30_v1.yaml"
+      - "evidence/causal30_v1_release.zip"
       - "evidence/archive_parts/**"
       - "evidence/README.md"
       - "scripts/materialize_causal30_archive.py"
@@ -25,7 +26,11 @@ jobs:
           python-version: "3.11"
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements/causal30-release.txt
-      - run: python scripts/materialize_causal30_archive.py
+      - name: Materialize compact evidence archive when needed
+        run: |
+          if [ ! -f evidence/causal30_v1_release.zip ]; then
+            python scripts/materialize_causal30_archive.py
+          fi
       - run: python scripts/verify_causal30_release.py --archive evidence/causal30_v1_release.zip --json-output reproduced/verification.json
       - run: python scripts/reproduce_tables.py --archive evidence/causal30_v1_release.zip
       - run: python scripts/reproduce_figures.py --archive evidence/causal30_v1_release.zip
