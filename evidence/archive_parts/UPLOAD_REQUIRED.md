@@ -4,6 +4,10 @@ The compact `causal30_v1_release.zip` was locally reconstructed and verified wit
 
 `0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa`
 
-Before this pull request can be marked ready for review, the base64 archive parts must be added to this directory. CI will then materialize the ZIP, verify all internal checksums, reproduce the principal tables and figures, and run the release tests.
+Before this pull request can be marked ready for review, upload that file directly to:
+
+`evidence/causal30_v1_release.zip`
+
+The workflow will detect the direct ZIP, verify the archive and all internal checksums, reproduce the principal tables and figures, and run the test suite.
 
 Do not create a release tag or archival DOI while this gate remains open.
