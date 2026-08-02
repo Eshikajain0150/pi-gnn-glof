@@ -3,9 +3,15 @@
   "protocol_id": "CAUSAL_30DAY_GLOF_FORECAST_V1_1",
   "branch": "release/causal30_v1",
   "base_commit": "4434e8a17aa265aa64a15d84e6d32052901219d7",
+  "verified_head_commit": "03316fee1cee6faf4ce81884de8bdb4966021c6d",
   "compact_archive_filename": "causal30_v1_release.zip",
   "compact_archive_sha256": "0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa",
-  "local_verification": {
+  "github_actions": {
+    "causal30_release": "PASS",
+    "repository_tests": "PASS",
+    "reproduced_artifact_sha256": "ea8361f9e0d61dbd6cd6a7909cf9f9b00dbf44df64512012c9d40d0670a7f2ee"
+  },
+  "verified_evidence": {
     "status": "PASS",
     "anchors": 43,
     "splits": {"train": 27, "validation": 7, "test": 9},
@@ -14,7 +20,11 @@
     "primary_seed_model_rows": 20,
     "ablation_seed_configuration_rows": 35,
     "event_node_predictions": 180,
-    "pytest": "1 passed"
+    "principal_tables_reproduced": true,
+    "principal_figures_reproduced": true,
+    "release_test": "PASS",
+    "repository_test_suite": "PASS",
+    "cpu_quick_test": "PASS"
   },
   "scientific_boundaries": {
     "test_interpretation": "one correlated 2022 drainage sequence",
@@ -24,5 +34,5 @@
     "operational_claims": false,
     "cross_glacier_generalization": false
   },
-  "release_gate": "Do not create the immutable tag or archival DOI until the evidence archive is committed, CI passes, and fresh-environment verification succeeds."
+  "next_gate": "Merge the reviewed pull request before creating an immutable release tag and archival DOI."
 }
