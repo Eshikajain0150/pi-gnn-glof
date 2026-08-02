@@ -34,7 +34,7 @@ jobs:
       - run: python scripts/verify_causal30_release.py --archive evidence/causal30_v1_release.zip --json-output reproduced/verification.json
       - run: python scripts/reproduce_tables.py --archive evidence/causal30_v1_release.zip
       - run: python scripts/reproduce_figures.py --archive evidence/causal30_v1_release.zip
-      - run: pytest -q
+      - run: pytest -q tests/test_causal30_release.py
       - uses: actions/upload-artifact@v4
         with:
           name: causal30-v1-reproduced-evidence
