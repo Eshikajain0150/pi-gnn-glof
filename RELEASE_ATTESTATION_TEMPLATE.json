@@ -1,0 +1,8 @@
+{
+  "schema": "pi-gnn-glof-release-attestation-v1",
+  "tag": "v1.1.0-causal30-calendar",
+  "commit_sha": "FILL_AFTER_TAGGING_40_HEX",
+  "zenodo_version_doi": "FILL_AFTER_RESERVING_NEW_VERSION_DOI",
+  "release_asset_filename": "pi-gnn-glof-v1.1.0-causal30-calendar.zip",
+  "release_asset_sha256": "COMPUTE_FROM_UNCHANGED_ZIP"
+}

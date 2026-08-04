@@ -1,0 +1,130 @@
+protocol_id,control_id,model,split,anchor_date,day_of_year,label,probability,validation_selected_threshold,alert,event_id,event_start,event_end
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-03-01,60,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-03-09,68,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-03-17,76,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-03-25,84,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-04-02,92,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-04-10,100,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-04-18,108,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-04-26,116,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-05-04,124,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-05-12,132,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-05-20,140,0,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-05-28,148,1,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-06-05,156,1,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-06-13,164,1,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2019-06-21,172,1,0.296296296296,0.296296296296,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-03-01,61,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-03-09,69,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-03-17,77,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-03-25,85,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-04-02,93,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-04-10,101,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-04-18,109,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-04-26,117,0,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-05-04,125,1,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-05-12,133,1,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-05-20,141,1,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,train,2020-05-28,149,1,0.296296296296,0.296296296296,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-03-01,60,0,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-03-09,68,0,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-03-17,76,0,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-03-25,84,0,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-04-02,92,0,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-04-26,116,1,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,validation,2021-05-04,124,1,0.296296296296,0.296296296296,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-03-01,60,0,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-03-09,68,0,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-03-17,76,0,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-03-25,84,0,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-04-02,92,0,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-04-10,100,1,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-04-18,108,1,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-04-26,116,1,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,training_prevalence,Training-prevalence constant,test,2022-05-04,124,1,0.296296296296,0.296296296296,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-03-01,60,0,0.020427837836,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-03-09,68,0,0.031243861498,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-03-17,76,0,0.047508947660,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-03-25,84,0,0.071615443101,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-04-02,92,0,0.106585042883,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-04-10,100,0,0.155765238759,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-04-18,108,0,0.221999286963,0.306182861536,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-04-26,116,0,0.306182861536,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-05-04,124,0,0.405644953962,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-05-12,132,0,0.513503905790,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-05-20,140,0,0.620119649543,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-05-28,148,1,0.716280027502,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-06-05,156,1,0.796102543095,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-06-13,164,1,0.857922140898,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2019-06-21,172,1,0.903275903138,0.306182861536,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-03-01,61,0,0.021547468856,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-03-09,69,0,0.032936376438,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-03-17,77,0,0.050037051086,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-03-25,85,0,0.075324885338,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-04-02,93,0,0.111887498078,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-04-10,101,0,0.163067772896,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-04-18,109,0,0.231555304892,0.306182861536,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-04-26,117,0,0.317881980562,0.306182861536,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-05-04,125,1,0.418850212867,0.306182861536,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-05-12,133,1,0.527106442547,0.306182861536,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-05-20,141,1,0.632872440470,0.306182861536,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,train,2020-05-28,149,1,0.727224648458,0.306182861536,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-03-01,60,0,0.020427837836,0.306182861536,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-03-09,68,0,0.031243861498,0.306182861536,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-03-17,76,0,0.047508947660,0.306182861536,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-03-25,84,0,0.071615443101,0.306182861536,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-04-02,92,0,0.106585042883,0.306182861536,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-04-26,116,1,0.306182861536,0.306182861536,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,validation,2021-05-04,124,1,0.405644953962,0.306182861536,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-03-01,60,0,0.020427837836,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-03-09,68,0,0.031243861498,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-03-17,76,0,0.047508947660,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-03-25,84,0,0.071615443101,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-04-02,92,0,0.106585042883,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-04-10,100,1,0.155765238759,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-04-18,108,1,0.221999286963,0.306182861536,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-04-26,116,1,0.306182861536,0.306182861536,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_scalar_logistic,Day-of-year scalar logistic,test,2022-05-04,124,1,0.405644953962,0.306182861536,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-03-01,60,0,0.054067429942,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-03-09,68,0,0.047803513971,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-03-17,76,0,0.047284958581,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-03-25,84,0,0.052347841333,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-04-02,92,0,0.064612309643,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-04-10,100,0,0.088121648628,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-04-18,108,0,0.130661468020,0.204905595305,0,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-04-26,116,0,0.204905595305,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-05-04,124,0,0.325337210079,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-05-12,132,0,0.493178178864,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-05-20,140,0,0.676339037499,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-05-28,148,1,0.824777531219,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-06-05,156,1,0.916332832350,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-06-13,164,1,0.962832907116,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2019-06-21,172,1,0.983944950129,0.204905595305,1,shisper_2019_glof,2019-06-22,2019-06-23
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-03-01,61,0,0.052922019479,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-03-09,69,0,0.047444026619,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-03-17,77,0,0.047597700648,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-03-25,85,0,0.053431613356,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-04-02,93,0,0.066818890685,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-04-10,101,0,0.092187036200,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-04-18,109,0,0.137897458050,0.204905595305,0,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-04-26,117,0,0.217186107022,0.204905595305,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-05-04,125,1,0.344012777859,0.204905595305,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-05-12,133,1,0.516276773821,0.204905595305,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-05-20,141,1,0.697664327900,0.204905595305,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,train,2020-05-28,149,1,0.839318591031,0.204905595305,1,shisper_2020_glof,2020-05-29,2020-05-29
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-03-01,60,0,0.054067429942,0.204905595305,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-03-09,68,0,0.047803513971,0.204905595305,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-03-17,76,0,0.047284958581,0.204905595305,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-03-25,84,0,0.052347841333,0.204905595305,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-04-02,92,0,0.064612309643,0.204905595305,0,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-04-26,116,1,0.204905595305,0.204905595305,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,validation,2021-05-04,124,1,0.325337210079,0.204905595305,1,shisper_2021_glof,2021-05-10,2021-05-20
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-03-01,60,0,0.054067429942,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-03-09,68,0,0.047803513971,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-03-17,76,0,0.047284958581,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-03-25,84,0,0.052347841333,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-04-02,92,0,0.064612309643,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-04-10,100,1,0.088121648628,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-04-18,108,1,0.130661468020,0.204905595305,0,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-04-26,116,1,0.204905595305,0.204905595305,1,shisper_2022_glof,2022-05-07,2022-05-07
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,doy_harmonic_logistic,Day-of-year harmonic logistic,test,2022-05-04,124,1,0.325337210079,0.204905595305,1,shisper_2022_glof,2022-05-07,2022-05-07

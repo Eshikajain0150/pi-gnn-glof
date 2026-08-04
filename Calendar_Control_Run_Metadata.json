@@ -1,0 +1,52 @@
+{
+  "evaluation": "held-out test only (2022; nine correlated anchors from one event sequence)",
+  "excluded_evidence": "separate 125-scene rerun",
+  "fitting": "training only (2019-2020)",
+  "logistic_parameters": {
+    "doy_harmonic_logistic": {
+      "coefficient": [
+        -1.308856139125634,
+        -0.9262550959968688
+      ],
+      "intercept": -0.9853646524672306,
+      "scaler_mean": [
+        0.8063313874579756,
+        -0.28292464676852913
+      ],
+      "scaler_scale": [
+        0.219620909650236,
+        0.4706909749457723
+      ]
+    },
+    "doy_scalar_logistic": {
+      "coefficient": [
+        1.7513697988155064
+      ],
+      "intercept": -1.084487081225158,
+      "scaler_mean": [
+        111.11111111111111
+      ],
+      "scaler_scale": [
+        32.13321038857685
+      ]
+    }
+  },
+  "models": [
+    "training_prevalence",
+    "doy_scalar_logistic",
+    "doy_harmonic_logistic"
+  ],
+  "protocol_id": "CAUSAL_30DAY_GLOF_FORECAST_V1_1",
+  "scope": "calendar-only leakage-control audit",
+  "software": {
+    "numpy": "2.3.5",
+    "python": "3.13.5",
+    "scikit_learn": "1.8.0"
+  },
+  "threshold_selection": "validation only (2021), maximum F1 with highest-threshold tie-break",
+  "thresholds": {
+    "doy_harmonic_logistic": 0.2049055953053606,
+    "doy_scalar_logistic": 0.30618286153558727,
+    "training_prevalence": 0.2962962962962963
+  }
+}

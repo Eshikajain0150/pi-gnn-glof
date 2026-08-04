@@ -1,0 +1,43 @@
+{
+  "title": "Leakage-Controlled Shisper Glacier 30-Day Lake-Drainage Benchmark with Calendar Controls",
+  "upload_type": "software",
+  "description": "Reproducibility release for a leakage-controlled 30-day lake-drainage benchmark at Shisper Glacier. It contains the frozen causal30_v1 evidence, calendar-only controls, model and ablation summaries, anchor-level predictions, excluded-anchor records, verification scripts, checksums and explicit interpretation boundaries.",
+  "creators": [
+    {
+      "name": "Kaushik, Pratham",
+      "affiliation": "Centre for Research Impact and Outcome, Chitkara University Institute of Engineering and Technology, Chitkara University, Chandigarh-Patiala National Highway, Rajpura, Punjab 140401, India"
+    },
+    {
+      "name": "Kukreja, Vinay",
+      "affiliation": "Centre for Research Impact and Outcome, Chitkara University Institute of Engineering and Technology, Chitkara University, Chandigarh-Patiala National Highway, Rajpura, Punjab 140401, India"
+    },
+    {
+      "name": "Jain, Eshika",
+      "affiliation": "Centre for Research Impact and Outcome, Chitkara University Institute of Engineering and Technology, Chitkara University, Chandigarh-Patiala National Highway, Rajpura, Punjab 140401, India"
+    }
+  ],
+  "access_right": "open",
+  "license": "bsd-3-clause",
+  "version": "v1.1.0-causal30-calendar",
+  "keywords": [
+    "Shisper Glacier",
+    "glacial lake outburst flood",
+    "causal forecasting",
+    "calendar control",
+    "graph neural network",
+    "physics-informed machine learning",
+    "Sentinel-2"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Eshikajain0150/pi-gnn-glof/releases/tag/v1.1.0-causal30-calendar",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.5281/zenodo.21761944",
+      "relation": "isNewVersionOf",
+      "scheme": "doi"
+    }
+  ]
+}

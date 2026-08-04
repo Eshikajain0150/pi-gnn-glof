@@ -1,0 +1,22 @@
+{
+  "manuscript_title": "Leakage-Controlled Benchmarking of Multimodal and Physics-Informed Graph Models for 30-Day Lake-Drainage Forecasting at Shisper Glacier",
+  "software_release_title": "Leakage-Controlled Shisper Glacier 30-Day Lake-Drainage Benchmark with Calendar Controls",
+  "version": "v1.1.0-causal30-calendar",
+  "git_tag": "v1.1.0-causal30-calendar",
+  "release_commit": "RECORDED_EXTERNALLY_AFTER_TAGGING",
+  "zenodo_version_doi": "ASSIGNED_BY_ZENODO_NEW_VERSION",
+  "authors": [
+    "Pratham Kaushik",
+    "Vinay Kukreja",
+    "Eshika Jain"
+  ],
+  "affiliation": "Centre for Research Impact and Outcome, Chitkara University Institute of Engineering and Technology, Chitkara University, Chandigarh-Patiala National Highway, Rajpura, Punjab 140401, India",
+  "corresponding_author": "Vinay Kukreja",
+  "corresponding_email": "onlyvinaykukreja@gmail.com",
+  "funding": "No specific grant.",
+  "competing_interests": "None declared.",
+  "credit_source": "Latest uploaded manuscript authorship contribution statement.",
+  "all_authors_submission_approval": "NOT_VERIFIED_FROM_FILES",
+  "ai_use_declaration_approval": "NOT_VERIFIED_FROM_FILES",
+  "identifier_binding": "Commit SHA, DOI, and release-asset SHA-256 are bound in RELEASE_ATTESTATION.json after the immutable tag and reserved/published DOI exist; they are not embedded in the committed archive."
+}
