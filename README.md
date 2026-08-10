@@ -34,11 +34,11 @@ Verify the archived evidence without downloading the 10.5 GB raw imagery:
 ```bash
 python -m pip install -r requirements/causal30-release.txt
 python scripts/verify_causal30_release.py \
-  --archive evidence/causal30_v1_release.zip
+  --evidence evidence/causal30_v1
 python scripts/reproduce_tables.py \
-  --archive evidence/causal30_v1_release.zip
+  --evidence evidence/causal30_v1
 python scripts/reproduce_figures.py \
-  --archive evidence/causal30_v1_release.zip
+  --evidence evidence/causal30_v1
 pytest -q tests/test_causal30_release.py
 ```
 

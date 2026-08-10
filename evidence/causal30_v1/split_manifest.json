@@ -1,0 +1,44 @@
+{
+  "protocol_id": "CAUSAL_30DAY_GLOF_FORECAST_V1_1",
+  "splits": {
+    "test": {
+      "event_ids": [
+        "shisper_2022_glof"
+      ],
+      "negative_anchors": 5,
+      "positive_anchors": 4,
+      "records": 9,
+      "years": [
+        2022
+      ]
+    },
+    "train": {
+      "event_ids": [
+        "shisper_2019_glof",
+        "shisper_2020_glof"
+      ],
+      "negative_anchors": 19,
+      "positive_anchors": 8,
+      "records": 27,
+      "years": [
+        2019,
+        2020
+      ]
+    },
+    "validation": {
+      "event_ids": [
+        "shisper_2021_glof"
+      ],
+      "negative_anchors": 5,
+      "positive_anchors": 2,
+      "records": 7,
+      "years": [
+        2021
+      ]
+    }
+  },
+  "test_dependence": "The nine 2022 anchors are successive forecast opportunities around one correlated event sequence, not nine independent events.",
+  "total_negative_anchors": 29,
+  "total_positive_anchors": 14,
+  "total_records": 43
+}

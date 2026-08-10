@@ -1,0 +1,3 @@
+protocol_id,split,event_id,anchor_date,forecast_window_start_exclusive,forecast_window_end_inclusive,documented_event_start,documented_event_end,exclusion_reason
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,validation,shisper_2021_glof,2021-04-10,2021-04-10,2021-05-10,2021-05-10,2021-05-20,partial_overlap_without_full_interval_containment
+CAUSAL_30DAY_GLOF_FORECAST_V1_1,validation,shisper_2021_glof,2021-04-18,2021-04-18,2021-05-18,2021-05-10,2021-05-20,partial_overlap_without_full_interval_containment

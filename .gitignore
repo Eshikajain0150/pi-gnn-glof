@@ -15,3 +15,8 @@ outputs/
 *.pth
 *.npz
 !tests/fixtures/*.npz
+# journal policy: no compressed archives in the repository
+*.zip
+*.rar
+*.7z
+*.tar.gz

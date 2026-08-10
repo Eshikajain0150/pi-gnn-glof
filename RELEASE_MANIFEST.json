@@ -13,16 +13,6 @@
     "commit": "0e3f1586723b85d763dcab8dd31d3740f7c23613",
     "doi": "10.5281/zenodo.21761944"
   },
-  "archives": {
-    "frozen_model_evidence": {
-      "filename": "evidence/causal30_v1_release.zip",
-      "sha256": "0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa"
-    },
-    "calendar_extension_evidence": {
-      "filename": "evidence/causal30_v1_calendar_release.zip",
-      "sha256": "e2507f92a9f41bb381b311f633aadfc4b22220b2f550878a9c997c1a35ce1768"
-    }
-  },
   "calendar_controls": {
     "models": 3,
     "fitting": "train only",
@@ -45,5 +35,16 @@
     "separate_125_scene_rerun": "excluded"
   },
   "critical_file_tree_sha256": "6ea2448cd1578c3d39a3eb2cc5d2c96ecb8ae1780f1785ea3752900a0a001130",
-  "publication_gate": "Publish this exact tree under the fixed tag, bind tag commit + new DOI + full release-asset SHA-256 in external RELEASE_ATTESTATION.json, and verify independently downloaded GitHub and Zenodo copies."
+  "publication_gate": "Publish this exact tree under the fixed tag, bind tag commit + new DOI + full release-asset SHA-256 in external RELEASE_ATTESTATION.json, and verify independently downloaded GitHub and Zenodo copies.",
+  "evidence_directories": {
+    "frozen_model_evidence": {
+      "path": "evidence/causal30_v1",
+      "per_file_checksums": "evidence/causal30_v1/checksums.sha256"
+    },
+    "calendar_extension_evidence": {
+      "path": "evidence/causal30_v1_calendar",
+      "per_file_checksums": "evidence/causal30_v1_calendar/checksums.sha256"
+    }
+  },
+  "packaging": "Evidence is committed as individual uncompressed files. No compressed archive is stored in the repository; integrity is established per file through the committed checksums.sha256 manifests."
 }

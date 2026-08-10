@@ -7,7 +7,6 @@ import csv
 import hashlib
 import io
 import json
-import zipfile
 from pathlib import Path
 
 TOP = "causal30_v1_calendar/"
@@ -27,39 +26,40 @@ REQUIRED = {
 
 def parse_args():
     p = argparse.ArgumentParser()
-    p.add_argument("--archive", type=Path, default=Path("evidence/causal30_v1_calendar_release.zip"))
+    p.add_argument("--evidence", type=Path, default=Path("evidence/causal30_v1_calendar"))
     return p.parse_args()
 
 
-def rows(zf: zipfile.ZipFile, name: str):
-    text = zf.read(TOP + name).decode("utf-8")
+def rows(root: Path, name: str):
+    text = (root / name).read_text(encoding="utf-8")
     return list(csv.DictReader(io.StringIO(text)))
 
 
 def main() -> int:
     args = parse_args()
-    with zipfile.ZipFile(args.archive) as zf:
-        if zf.testzip() is not None:
-            raise SystemExit("FAIL: corrupt ZIP")
-        names = {name[len(TOP):] for name in zf.namelist() if name.startswith(TOP) and not name.endswith("/")}
+    root = args.evidence
+    if True:
+        if not root.is_dir():
+            raise SystemExit(f"FAIL: evidence directory not found: {root}")
+        names = {str(p.relative_to(root)).replace("\\", "/") for p in root.rglob("*") if p.is_file()}
         missing = REQUIRED - names
         if missing:
             raise SystemExit(f"FAIL: missing {sorted(missing)}")
-        checks = zf.read(TOP + "checksums.sha256").decode("utf-8").splitlines()
+        checks = (root / "checksums.sha256").read_text(encoding="utf-8").splitlines()
         for line in checks:
             digest, relative = line.split("  ./", 1)
-            actual = hashlib.sha256(zf.read(TOP + relative)).hexdigest()
+            actual = hashlib.sha256((root / relative).read_bytes()).hexdigest()
             if actual != digest:
                 raise SystemExit(f"FAIL: checksum mismatch {relative}")
-        anchors = [json.loads(line) for line in zf.read(TOP + "anchor_manifest.jsonl").decode().splitlines() if line]
+        anchors = [json.loads(line) for line in (root / "anchor_manifest.jsonl").read_text(encoding="utf-8").splitlines() if line]
         if len(anchors) != 43:
             raise SystemExit("FAIL: anchor count")
-        summary = {r["control_id"]: r for r in rows(zf, "Calendar_Control_Summary.csv")}
+        summary = {r["control_id"]: r for r in rows(root, "Calendar_Control_Summary.csv")}
         if float(summary["doy_scalar_logistic"]["test_pr_auc"]) != 1.0:
             raise SystemExit("FAIL: scalar PR-AUC")
         if float(summary["doy_harmonic_logistic"]["test_roc_auc"]) != 1.0:
             raise SystemExit("FAIL: harmonic ROC-AUC")
-        excluded = rows(zf, "Calendar_Control_Excluded_Anchors.csv")
+        excluded = rows(root, "Calendar_Control_Excluded_Anchors.csv")
         if [r["anchor_date"] for r in excluded] != ["2021-04-10", "2021-04-18"]:
             raise SystemExit("FAIL: excluded anchors")
     print(json.dumps({
@@ -67,7 +67,7 @@ def main() -> int:
         "anchors": 43,
         "calendar_controls": 3,
         "excluded_partial_overlap_anchors": 2,
-        "archive": str(args.archive),
+        "evidence": str(args.evidence),
     }, indent=2))
     return 0
 

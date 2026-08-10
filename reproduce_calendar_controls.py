@@ -73,15 +73,15 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     source = parser.add_mutually_exclusive_group()
     source.add_argument(
-        "--archive",
+        "--evidence",
         type=Path,
-        default=Path("evidence/causal30_v1_release.zip"),
-        help="Compact causal30_v1 evidence ZIP (default: evidence/causal30_v1_release.zip).",
+        default=Path("evidence/causal30_v1"),
+        help="Uncompressed causal30_v1 evidence directory (default: evidence/causal30_v1).",
     )
     source.add_argument(
         "--manifest",
         type=Path,
-        help="Direct path to anchor_manifest.jsonl instead of the compact archive.",
+        help="Direct path to anchor_manifest.jsonl instead of the evidence directory.",
     )
     parser.add_argument("--output-dir", type=Path, default=Path("."))
     parser.add_argument(
@@ -92,20 +92,20 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def read_jsonl_from_archive(archive: Path) -> tuple[list[dict], dict]:
-    if not archive.exists():
-        raise FileNotFoundError(f"Archive not found: {archive}")
-    with zipfile.ZipFile(archive) as zf:
-        if zf.testzip() is not None:
-            raise ValueError(f"Corrupt ZIP member: {zf.testzip()}")
-        manifest_name = "causal30_v1/anchor_manifest.jsonl"
-        protocol_name = "causal30_v1/protocol.json"
-        rows = [
-            json.loads(line)
-            for line in zf.read(manifest_name).decode("utf-8").splitlines()
-            if line.strip()
-        ]
-        protocol = json.loads(zf.read(protocol_name).decode("utf-8"))
+def read_jsonl_from_evidence(evidence: Path) -> tuple[list[dict], dict]:
+    if not evidence.is_dir():
+        raise FileNotFoundError(f"Evidence directory not found: {evidence}")
+    manifest_path = evidence / "anchor_manifest.jsonl"
+    protocol_path = evidence / "protocol.json"
+    for required in (manifest_path, protocol_path):
+        if not required.exists():
+            raise FileNotFoundError(f"Missing evidence file: {required}")
+    rows = [
+        json.loads(line)
+        for line in manifest_path.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+    protocol = json.loads(protocol_path.read_text(encoding="utf-8"))
     return rows, protocol
 
 
@@ -390,8 +390,8 @@ def main() -> int:
         rows, protocol = read_jsonl_direct(args.manifest)
         source = args.manifest
     else:
-        rows, protocol = read_jsonl_from_archive(args.archive)
-        source = args.archive
+        rows, protocol = read_jsonl_from_evidence(args.evidence)
+        source = args.evidence
     outputs = run(rows, protocol)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     if args.check:
@@ -399,8 +399,20 @@ def main() -> int:
         for filename, expected in outputs.items():
             path = args.output_dir / filename
             actual = path.read_text(encoding="utf-8") if path.exists() else None
-            if actual != expected:
-                differences.append(filename)
+            if actual == expected:
+                continue
+            if filename == OUTPUT_FILES["metadata"] and actual is not None:
+                # the recorded interpreter/library versions are environment
+                # specific and are excluded from the reproducibility check
+                try:
+                    got, want = json.loads(actual), json.loads(expected)
+                    got.pop("software", None)
+                    want.pop("software", None)
+                    if got == want:
+                        continue
+                except json.JSONDecodeError:
+                    pass
+            differences.append(filename)
         if differences:
             print("Calendar-control outputs differ: " + ", ".join(differences), file=sys.stderr)
             return 1

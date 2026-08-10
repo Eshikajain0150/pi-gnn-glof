@@ -1,0 +1,124 @@
+{
+  "anchor_cadence_days": 8,
+  "approval": "User explicitly approved the causal 30-day temporal forecast protocol.",
+  "coords_source": {
+    "key": "fit_node_transforms:index_ordered_locked_grid_coordinates",
+    "path": "data/external/shisper_candidate_84_node_cells_epsg32643.geojson"
+  },
+  "created_utc": "2026-07-29T10:53:09.727479+00:00",
+  "elevation_source": {
+    "key": "elevation",
+    "path": "data/external/shisper_candidate_84_node_elevation_slope_arrays.npz"
+  },
+  "forecast_horizon_days": 30,
+  "grid_fit_residual_m": 3.2927225399135964e-09,
+  "interval_censoring": "An anchor is retained as positive only when its 30-day horizon fully contains the published event interval. Partial overlaps are excluded.",
+  "leakage_audit": {
+    "all_splits_have_positive_and_negative_anchors": true,
+    "chronological_disjointness_passed": true,
+    "counts": {
+      "test": {
+        "negative_anchors": 5,
+        "positive_anchors": 4,
+        "records": 9
+      },
+      "train": {
+        "negative_anchors": 19,
+        "positive_anchors": 8,
+        "records": 27
+      },
+      "validation": {
+        "negative_anchors": 5,
+        "positive_anchors": 2,
+        "records": 7
+      }
+    },
+    "optical_future_acquisitions": 0,
+    "split_years": {
+      "test": [
+        2022
+      ],
+      "train": [
+        2019,
+        2020
+      ],
+      "validation": [
+        2021
+      ]
+    },
+    "thermal_future_slots": 0,
+    "velocity_current_or_future_years": 0
+  },
+  "manifest": "evidence/causal30_v1/anchor_manifest.jsonl",
+  "manifest_sha256": "f430a9f560397720de4425c3f98e104246125b88fb1abc01bc525f366e24bcc0",
+  "node_geojson_crs": "EPSG:32643",
+  "node_geojson_path": "data/external/shisper_candidate_84_node_cells_epsg32643.geojson",
+  "observed_manifest": "data/external/observed_positive_unlabeled_manifest.json",
+  "optical": {
+    "bands": [
+      "B02",
+      "B03",
+      "B04",
+      "B08",
+      "B11",
+      "B12"
+    ],
+    "causal_rule": "Only Sentinel-2 acquisitions on or before the anchor date.",
+    "composite": "Per-pixel median after SCL rejection.",
+    "lookback_days": 48,
+    "missing_fill": "Train-only median of per-node valid-pixel medians.",
+    "rejected_scl": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      9,
+      10
+    ]
+  },
+  "protocol_id": "CAUSAL_30DAY_GLOF_FORECAST_V1_1",
+  "release_scope": {
+    "dispersion": "sample standard deviation across optimization seeds",
+    "excluded_evidence": "separate 125-scene rerun is not pooled, substituted, or cited as confirmation",
+    "primary_evidence": "causal30_v1 only",
+    "primary_models": [
+      "cnn",
+      "temporal_gru",
+      "plain_gnn",
+      "pi_gnn"
+    ],
+    "seeds": [
+      7,
+      21,
+      42,
+      84,
+      123
+    ],
+    "test_interpretation": "nine correlated anchors from one 2022 drainage sequence"
+  },
+  "status": "causal30_dataset_ready",
+  "target": {
+    "primary": "At observed event-footprint node(s), will a GLOF/drainage event occur within the next 30 days?",
+    "primary_loss_mask": "Only observed event-footprint node(s) are temporally supervised.",
+    "secondary": "Full-grid spatial localization labels are stored only on positive anchors and are not primary BCE training targets.",
+    "trajectory": "Six future 8-day bins with interval-censor masks."
+  },
+  "temporal_split": {
+    "2019": "train",
+    "2020": "train",
+    "2021": "validation",
+    "2022": "test"
+  },
+  "thermal": {
+    "causal_rule": "Four latest aligned MODIS slots on or before the anchor date.",
+    "sequence_length": 4,
+    "slot_days": 8
+  },
+  "training_started": false,
+  "velocity": {
+    "causal_rule": "Completed annual mosaics y-4 through y-1; event-year velocity is excluded.",
+    "graph_flow": "Causal mean direction from the same historical velocity sequence.",
+    "sequence_length": 4
+  }
+}

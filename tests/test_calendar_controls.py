@@ -18,8 +18,8 @@ def test_calendar_outputs_reproduce():
         [
             sys.executable,
             str(ROOT / "reproduce_calendar_controls.py"),
-            "--archive",
-            str(ROOT / "evidence" / "causal30_v1_release.zip"),
+            "--evidence",
+            str(ROOT / "evidence" / "causal30_v1"),
             "--output-dir",
             str(ROOT),
             "--check",
