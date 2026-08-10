@@ -1,0 +1,3 @@
+# evidence bytes are checksum-verified: never convert line endings
+evidence/** -text
+*.sha256 -text
