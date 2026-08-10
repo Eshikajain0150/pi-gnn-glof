@@ -384,6 +384,49 @@ def run(rows: list[dict], protocol: dict) -> dict[str, str]:
     }
 
 
+def _equivalent(got, want, tol: float = 1e-6) -> bool:
+    """Compare regenerated run metadata against the checked-in copy.
+
+    Recorded interpreter and library versions are environment specific and are
+    ignored by the caller. Fitted floating-point parameters are compared within
+    a relative tolerance because the underlying solver is not bit-reproducible
+    across operating systems and BLAS builds. The scientific outputs (the three
+    CSV files) remain compared exactly.
+    """
+    if isinstance(got, dict) and isinstance(want, dict):
+        if got.keys() != want.keys():
+            return False
+        return all(_equivalent(got[k], want[k], tol) for k in got)
+    if isinstance(got, list) and isinstance(want, list):
+        return len(got) == len(want) and all(
+            _equivalent(a, b, tol) for a, b in zip(got, want)
+        )
+    if isinstance(got, bool) or isinstance(want, bool):
+        return got is want
+    if isinstance(got, (int, float)) and isinstance(want, (int, float)):
+        return abs(float(got) - float(want)) <= tol * max(1.0, abs(float(want)))
+    return got == want
+
+
+def _first_difference(got, want, path="", tol: float = 1e-6):
+    """Return a human-readable description of the first real difference."""
+    if isinstance(got, dict) and isinstance(want, dict):
+        for key in sorted(set(got) | set(want)):
+            if key not in got or key not in want:
+                return f"{path}/{key}: present in only one copy"
+            if not _equivalent(got[key], want[key], tol):
+                return _first_difference(got[key], want[key], f"{path}/{key}", tol)
+        return None
+    if isinstance(got, list) and isinstance(want, list):
+        if len(got) != len(want):
+            return f"{path}: length {len(got)} != {len(want)}"
+        for i, (a, b) in enumerate(zip(got, want)):
+            if not _equivalent(a, b, tol):
+                return _first_difference(a, b, f"{path}[{i}]", tol)
+        return None
+    return f"{path}: regenerated {got!r} != checked-in {want!r}"
+
+
 def main() -> int:
     args = parse_args()
     if args.manifest is not None:
@@ -402,14 +445,17 @@ def main() -> int:
             if actual == expected:
                 continue
             if filename == OUTPUT_FILES["metadata"] and actual is not None:
-                # the recorded interpreter/library versions are environment
-                # specific and are excluded from the reproducibility check
+                # recorded interpreter/library versions are environment specific,
+                # and fitted parameters are not bit-reproducible across platforms
                 try:
                     got, want = json.loads(actual), json.loads(expected)
                     got.pop("software", None)
                     want.pop("software", None)
-                    if got == want:
+                    if _equivalent(got, want):
                         continue
+                    detail = _first_difference(got, want)
+                    if detail:
+                        print("  " + detail, file=sys.stderr)
                 except json.JSONDecodeError:
                     pass
             differences.append(filename)

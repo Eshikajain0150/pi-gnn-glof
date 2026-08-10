@@ -20,3 +20,9 @@ outputs/
 *.rar
 *.7z
 *.tar.gz
+
+# one-off maintenance helpers
+fix_repo.py
+fix_lineendings.py
+final_cleanup.py
+final_fix.py

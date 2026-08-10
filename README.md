@@ -21,7 +21,6 @@ The manuscript-linked reproducibility release is:
 - **GitHub release:** `v1.0.0-causal30`
 - **Release commit:** `0e3f1586723b85d763dcab8dd31d3740f7c23613`
 - **Version-specific DOI:** [10.5281/zenodo.21761944](https://doi.org/10.5281/zenodo.21761944)
-- **Compact evidence SHA-256:** `0fb298684852b69a3f7b03bbb6748adc59aa6d64b4436235f41e71a36a9e9aaa`
 
 The frozen protocol uses 27 training anchors from 2019–2020, seven validation
 anchors from 2021, and nine held-out anchors from 2022. The five optimization
@@ -134,7 +133,7 @@ exact Shapley values rather than a sampling approximation.
 ```text
 configs/                 experiment and frozen release configurations
 docs/                    data schema and method-to-code map
-evidence/                compact frozen causal30_v1 evidence archive
+evidence/                frozen causal30_v1 evidence as individual files
 scripts/                 training, evaluation, verification, and reproduction
 src/pignn_glof/          model, graph, physics, training, and metrics
 tests/                   repository and release-specific tests
